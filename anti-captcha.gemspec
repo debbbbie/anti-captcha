@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["debbbbie@163.com"]
   spec.summary       = "AntiCaptcha api ruby wrapper"
   spec.description   = "AntiCaptcha api ruby wrapper"
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/debbbbie/anti-captcha"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
