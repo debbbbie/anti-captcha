@@ -1,4 +1,4 @@
-# AntiCaptcha [![Build Status](https://secure.travis-ci.org/pomnikita/antigate_rb.png)](http://travis-ci.org/pomnikita/antigate_rb)
+# AntiCaptcha [![Build Status](https://secure.travis-ci.org/debbbbie/anti-captcha.png)](http://travis-ci.org/debbbbie/anti-captcha)
 
 anti-captcha.com ruby api wrapper
 
