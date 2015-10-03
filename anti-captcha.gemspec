@@ -6,8 +6,8 @@ require 'anti-captcha/version'
 Gem::Specification.new do |spec|
   spec.name          = "anti-captcha"
   spec.version       = AntiCaptcha::VERSION
-  spec.authors       = ["Nikita Pomiashchii"]
-  spec.email         = ["pomnikita@gmail.com"]
+  spec.authors       = ["debbbbie"]
+  spec.email         = ["debbbbie@163.com"]
   spec.summary       = "AntiCaptcha api ruby wrapper"
   spec.description   = "AntiCaptcha api ruby wrapper"
   spec.homepage      = ""
