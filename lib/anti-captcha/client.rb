@@ -11,8 +11,10 @@ module AntiCaptcha
       @options = AntiCaptcha.configuration.options.merge(options)
     end
 
-    def decode(image)
-      case request_image(image)
+    # type: file data (bin)
+    # type: base64    (base64)
+    def decode(image, type = :bin)
+      case request_image(image, type)
       when /OK\|(.+)/
         @captcha_id = $1
         check
@@ -70,7 +72,9 @@ module AntiCaptcha
         id: @captcha_id
     end
 
-    def request_image(image)
+    # type: file data (bin)
+    # type: base64    (base64)
+    def request_image(image, type = :bin)
       request 'http://anti-captcha.com/in.php',
         @options.merge(method: 'base64', body: Base64.encode64(image))
     end
