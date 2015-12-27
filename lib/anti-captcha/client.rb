@@ -75,8 +75,9 @@ module AntiCaptcha
     # type: file data (bin)
     # type: base64    (base64)
     def request_image(image, type = :bin)
+      body = (type == :bin ? Base64.encode64(image) : image)
       request 'http://anti-captcha.com/in.php',
-        @options.merge(method: 'base64', body: Base64.encode64(image))
+        @options.merge(method: 'base64', body: body)
     end
 
     def request_report_bad

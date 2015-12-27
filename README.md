@@ -37,6 +37,13 @@ code = @client.decode(image_content)
 @client = AntiCaptcha::Client.new(retries_count: 5, phrase: 1)
 code = @client.decode(image_content_base64, :base64)
 ```
+
+## Upload to rubygems.org
+
+```
+gem release anti-captcha.gemspec
+```
+
 ## Contributing
 
 1. Fork it
