@@ -33,6 +33,10 @@ end
 code = @client.decode(image_content)
 ```
 
+```ruby
+@client = AntiCaptcha::Client.new(retries_count: 5, phrase: 1)
+code = @client.decode(image_content_base64, :base64)
+```
 ## Contributing
 
 1. Fork it
